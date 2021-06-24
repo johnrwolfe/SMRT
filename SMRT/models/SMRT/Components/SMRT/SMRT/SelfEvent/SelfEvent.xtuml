@@ -1,0 +1,59 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("17416514-6fef-4c0f-a394-d7d9aee077bc",
+	'SelfEvent',
+	3,
+	'SelfEvent',
+	'An event in flight sent by a state machine to itself.
+Created when the event is generated and deleted after 
+it has been dispatched to the receiving state machine.',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_ID
+	VALUES (0,
+	"17416514-6fef-4c0f-a394-d7d9aee077bc");
+INSERT INTO O_ID
+	VALUES (1,
+	"17416514-6fef-4c0f-a394-d7d9aee077bc");
+INSERT INTO O_ID
+	VALUES (2,
+	"17416514-6fef-4c0f-a394-d7d9aee077bc");
+INSERT INTO PE_PE
+	VALUES ("17416514-6fef-4c0f-a394-d7d9aee077bc",
+	1,
+	"6c0a4f96-8356-4522-923e-a4bfe620b4ea",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("6c0a4f96-8356-4522-923e-a4bfe620b4ea",
+	"00000000-0000-0000-0000-000000000000",
+	"3ecd5b43-8358-48ef-901f-c5b39417f5e2",
+	'SMRT',
+	'Definitions
+-----------
+Sending state machine.  The state machine whose execution causes 
+the generation of an event.  Consider instances A and B, both of which 
+have state machines.  As a result of a transition, the state machine 
+associated with instance A executes an activity that invokes an 
+instance-based operation of B, and this operation generates an event.
+Instance A is the sending state machine.
+
+Theory of Operation
+-------------------
+Instances of StateMachine are created when the system is initialized.
+Instances of Event and SelfEvent are created when an event is generated
+and deleted when the event has been dispatched or processed by the 
+receiving state machine.
+
+Several architectures can be illustrated using this arrangement.
+For example:
+- Dispatch self events, then non-self events, then delayed events
+- State machines serviced in round-robin fashion
+- State machines serviced in priority order
+- Delayed events dispatched when non-delayed events are in flight
+
+
+
+',
+	0,
+	'../SMRT.xtuml');

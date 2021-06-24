@@ -1,0 +1,60 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("004e68e5-4352-419c-b9e5-2987172832e4",
+	'Delay',
+	4,
+	'Delay',
+	'Specifies earliest dispatch time for a delayed event.',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("ff88eada-b65c-47cb-9ecc-79bb759099d7",
+	"004e68e5-4352-419c-b9e5-2987172832e4");
+INSERT INTO O_BATTR
+	VALUES ("ff88eada-b65c-47cb-9ecc-79bb759099d7",
+	"004e68e5-4352-419c-b9e5-2987172832e4");
+INSERT INTO O_ATTR
+	VALUES ("ff88eada-b65c-47cb-9ecc-79bb759099d7",
+	"004e68e5-4352-419c-b9e5-2987172832e4",
+	"00000000-0000-0000-0000-000000000000",
+	'EarliestDispatchTime',
+	'The associated event may not be dispatched before
+this time, but it may be dispatched an indeterminate 
+period of time afterward.
+',
+	'',
+	'EarliestDispatchTime',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"004e68e5-4352-419c-b9e5-2987172832e4");
+INSERT INTO O_ID
+	VALUES (1,
+	"004e68e5-4352-419c-b9e5-2987172832e4");
+INSERT INTO O_ID
+	VALUES (2,
+	"004e68e5-4352-419c-b9e5-2987172832e4");
+INSERT INTO PE_PE
+	VALUES ("004e68e5-4352-419c-b9e5-2987172832e4",
+	1,
+	"6c0a4f96-8356-4522-923e-a4bfe620b4ea",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("6c0a4f96-8356-4522-923e-a4bfe620b4ea",
+	"00000000-0000-0000-0000-000000000000",
+	"3ecd5b43-8358-48ef-901f-c5b39417f5e2",
+	'SMRT',
+	'Definitions.
+
+Sending state machine.  The state machine whose execution causes 
+the generation of an event.  Consider instances A and B, both of which 
+have state machines.  As a result of a transition, the state machine 
+associated with instance A executes an activity that invokes an 
+instance-based operation of B, and this operation generates an event.
+Instance A is the sending state machine.',
+	0,
+	'../SMRT.xtuml');

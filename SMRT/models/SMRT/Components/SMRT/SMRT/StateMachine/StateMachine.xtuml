@@ -1,0 +1,32 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("7a175548-6c70-4d89-9173-feda805b87ee",
+	'StateMachine',
+	1,
+	'StateMachine',
+	'A state machine, either class-based or instance based.',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_ID
+	VALUES (0,
+	"7a175548-6c70-4d89-9173-feda805b87ee");
+INSERT INTO O_ID
+	VALUES (1,
+	"7a175548-6c70-4d89-9173-feda805b87ee");
+INSERT INTO O_ID
+	VALUES (2,
+	"7a175548-6c70-4d89-9173-feda805b87ee");
+INSERT INTO PE_PE
+	VALUES ("7a175548-6c70-4d89-9173-feda805b87ee",
+	1,
+	"6c0a4f96-8356-4522-923e-a4bfe620b4ea",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("6c0a4f96-8356-4522-923e-a4bfe620b4ea",
+	"00000000-0000-0000-0000-000000000000",
+	"3ecd5b43-8358-48ef-901f-c5b39417f5e2",
+	'SMRT',
+	'',
+	0,
+	'../SMRT.xtuml');
